@@ -1,0 +1,48 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%; /* Form genişliği ekranın %80'i olacak */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+  }
+  
+  input[type="submit"] {
+    color: white;
+    background-color: #4CAF50; /* Yeşil arka plan rengi */
+    border: none;
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Kenar çizgilerini tek çizgi yapar */
+    margin:auto
+}
+
+th, td {
+    padding: 8px; /* Hücre içindeki boşluğu ayarlar */
+    text-align: left; /* Yazıları sola hizalar */
+    border-bottom: 1px solid #ddd; /* Alt kenar çizgisini belirler */
+}
+
+th {
+    background-color: #f2f2f2; /* Başlık hücresi için arka plan rengi */
+    color: black; /* Başlık yazı rengi */
+}
