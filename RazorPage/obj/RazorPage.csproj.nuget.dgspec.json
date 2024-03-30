@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Yunus Güven\\Desktop\\ceng382\\RazorPage\\RazorPage.csproj": {}
+    "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Yunus Güven\\Desktop\\ceng382\\RazorPage\\RazorPage.csproj": {
+    "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Yunus Güven\\Desktop\\ceng382\\RazorPage\\RazorPage.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
         "projectName": "RazorPage",
-        "projectPath": "c:\\Users\\Yunus Güven\\Desktop\\ceng382\\RazorPage\\RazorPage.csproj",
+        "projectPath": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
         "packagesPath": "C:\\Users\\Yunus Güven\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Yunus Güven\\Desktop\\ceng382\\RazorPage\\obj\\",
+        "outputPath": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus Güven\\AppData\\Roaming\\NuGet\\NuGet.Config"
