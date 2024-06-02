@@ -1,0 +1,214 @@
+﻿@page
+@model HotelReservationSystem.Pages.HomePageModel
+@{
+    var currentUserEmail = HttpContext.Session.GetString("UserEmail");
+}
+
+<h1>Welcome to Our Hotel Reservation Platform</h1>
+
+@if (currentUserEmail == null)
+{
+    <div class="text-center">
+        <a class="btn btn-success" asp-page="/Register">Sign Up</a>
+        <a class="btn btn-success" asp-page="/Login">Sign In</a>
+    </div>
+}
+else
+{
+    <h2>Greetings, @currentUserEmail</h2>
+    <p>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addRoomModal">Add New Room</button>
+    </p>
+
+    <h2>Rooms List</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Room Name</th>
+                <th>Capacity</th>
+                <th>View</th>
+                <th>Status</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Rooms != null)
+            {
+                foreach (var room in Model.Rooms)
+                {
+                    <tr>
+                        <td>@room.Name</td>
+                        <td>@room.Capacity</td>
+                        <td>@room.View</td>
+                        <td>
+                            @if (room.Reservations != null && room.Reservations.Any())
+                            {
+                                <span class="badge badge-warning">Occupied</span>
+                            }
+                            else
+                            {
+                                <span class="badge badge-success">Free</span>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-info" asp-page="/CreateReservation" asp-route-roomId="@room.Id">Book</a>
+                            <form method="post" asp-page-handler="DeleteRoom" asp-route-roomId="@room.Id" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <h2>Booked Rooms</h2>
+    <div>
+        <form method="get">
+            <div class="form-group">
+                <label for="filterRoomName">Room Name Filter</label>
+                <input type="text" id="filterRoomName" name="FilterRoomName" class="form-control" value="@Model.FilterRoomName" />
+            </div>
+            <div class="form-group">
+                <label for="filterStartDate">Start Date Filter</label>
+                <input type="date" id="filterStartDate" name="FilterStartDate" class="form-control" value="@Model.FilterStartDate?.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="form-group">
+                <label for="filterEndDate">End Date Filter</label>
+                <input type="date" id="filterEndDate" name="FilterEndDate" class="form-control" value="@Model.FilterEndDate?.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="form-group">
+                <label for="filterCapacity">Capacity Filter</label>
+                <input type="number" id="filterCapacity" name="FilterCapacity" class="form-control" value="@Model.FilterCapacity" />
+            </div>
+            <button type="submit" class="btn btn-success">Apply Filters</button>
+        </form>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Room</th>
+                <th>User</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model.ReservedRooms)
+            {
+                <tr>
+                    <td>@reservation.Room.Name</td>
+                    <td>@reservation.UserName</td>
+                    <td>@reservation.StartDate.ToShortDateString()</td>
+                    <td>@reservation.EndDate.ToShortDateString()</td>
+                    <td>
+                        @if (reservation.UserName == currentUserEmail)
+                        {
+                            <button class="btn btn-warning" onclick="loadEditModal(@reservation.Id, '@reservation.StartDate.ToString("yyyy-MM-dd")', '@reservation.EndDate.ToString("yyyy-MM-dd")')">Modify</button>
+                            <form method="post" asp-page-handler="DeleteReservation" asp-route-id="@reservation.Id" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Add Room Modal -->
+    <div class="modal fade" id="addRoomModal" tabindex="-1" role="dialog" aria-labelledby="addRoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addRoomModalLabel">Add New Room</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addRoomForm" method="post" asp-page="Index" asp-page-handler="CreateRoom">
+                        <div class="form-group">
+                            <label asp-for="Room.Name" class="control-label">Room Name</label>
+                            <input asp-for="Room.Name" class="form-control" />
+                            <span asp-validation-for="Room.Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Room.Capacity" class="control-label">Capacity</label>
+                            <input asp-for="Room.Capacity" class="form-control" type="number" />
+                            <span asp-validation-for="Room.Capacity" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Room.View" class="control-label">View</label>
+                            <input asp-for="Room.View" class="form-control" />
+                            <span asp-validation-for="Room.View" class="text-danger"></span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Add Room</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modify Reservation Modal -->
+    <div class="modal fade" id="modifyReservationModal" tabindex="-1" role="dialog" aria-labelledby="modifyReservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modifyReservationModalLabel">Modify Reservation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="modifyReservationForm" method="post" asp-page="Index" asp-page-handler="EditReservation">
+                        <input type="hidden" id="modifyReservationId" asp-for="Reservation.Id" />
+                        <div class="form-group">
+                            <label asp-for="Reservation.StartDate" class="control-label">Start Date</label>
+                            <input asp-for="Reservation.StartDate" class="form-control" type="date" id="modifyStartDate" />
+                            <span asp-validation-for="Reservation.StartDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Reservation.EndDate" class="control-label">End Date</label>
+                            <input asp-for="Reservation.EndDate" class="form-control" type="date" id="modifyEndDate" />
+                            <span asp-validation-for="Reservation.EndDate" class="text-danger"></span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- JavaScript to handle modal data -->
+<script>
+    function loadEditModal(id, startDate, endDate) {
+        document.getElementById("modifyReservationId").value = id;
+        document.getElementById("modifyStartDate").value = startDate;
+        document.getElementById("modifyEndDate").value = endDate;
+        $('#modifyReservationModal').modal('show');
+    }
+
+    function removeReservation(id) {
+        if (confirm("Do you really want to delete this reservation?")) {
+            $.ajax({
+                type: "POST",
+                url: "?handler=DeleteReservation",
+                data: { id: id },
+                success: function (response) {
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    alert("Error while deleting the reservation: " + error);
+                }
+            });
+        }
+    }
+</script>

@@ -1,0 +1,278 @@
+/* Base font size for the entire document */
+html {
+  font-size: 14px; /* Default font size */
+  position: relative;
+  min-height: 100%; /* Ensure the HTML element takes up the full height of the viewport */
+}
+
+/* Responsive font size adjustment for larger screens */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; /* Increase font size for better readability on larger screens */
+  }
+}
+
+/* Body element styling for a consistent look */
+body {
+  margin-bottom: 60px; /* Space at the bottom to prevent content from being hidden behind a fixed footer */
+  font-family: Arial, sans-serif; /* Default font for the body text */
+  line-height: 1.6; /* Improve readability with increased line height */
+  color: #333; /* Dark grey text color for better contrast */
+  background-color: #f8f9fa; /* Light grey background for a clean look */
+}
+
+/* Focus styles for interactive elements to improve accessibility */
+.btn:focus, 
+.btn:active:focus, 
+.btn-link.nav-link:focus, 
+.form-control:focus, 
+.form-check-input:focus {
+  box-shadow: 
+    0 0 0 0.1rem rgba(255, 255, 255, 0.5), /* Inner white outline for contrast */
+    0 0 0 0.25rem rgba(37, 140, 251, 0.5); /* Outer blue outline for visibility */
+}
+
+/* Button styling for a modern and clean look */
+.btn {
+  padding: 10px 20px; /* Add padding for a larger clickable area */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  background-color: #007bff; /* Primary blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove default border */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+.btn:hover, 
+.btn:focus {
+  background-color: #0056b3; /* Darker blue on hover and focus */
+  outline: none; /* Remove default focus outline */
+  transform: translateY(-2px); /* Slight lift effect on hover and focus */
+}
+
+/* Link button styling */
+.btn-link {
+  background: none; /* Remove background for link-style button */
+  color: #007bff; /* Blue text color */
+  text-decoration: underline; /* Underline to indicate clickable link */
+}
+
+.btn-link:hover, 
+.btn-link:focus {
+  color: #0056b3; /* Darker blue on hover and focus */
+  text-decoration: none; /* Remove underline on hover and focus */
+}
+
+/* Form control styling for better user experience */
+.form-control {
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ced4da; /* Light grey border */
+  padding: 10px; /* Add padding for better usability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border color and box-shadow */
+}
+
+.form-control:focus {
+  border-color: #80bdff; /* Blue border on focus */
+  box-shadow: 
+    0 0 0 0.1rem rgba(255, 255, 255, 0.5), /* Inner white outline */
+    0 0 0 0.25rem rgba(37, 140, 251, 0.5); /* Outer blue outline */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Form check input (checkboxes and radios) styling */
+.form-check-input:focus {
+  box-shadow: 
+    0 0 0 0.1rem rgba(255, 255, 255, 0.5), /* Inner white outline */
+    0 0 0 0.25rem rgba(37, 140, 251, 0.5); /* Outer blue outline */
+}
+
+/* Header styling for a consistent and attractive top section */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #0056b3;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Footer styling for a consistent look at the bottom of the page */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  line-height: 60px; /* Vertically center the text */
+  background-color: #f1f1f1; /* Light grey background color */
+  text-align: center; /* Center the text horizontally */
+  border-top: 1px solid #e5e5e5; /* Light grey border at the top */
+}
+
+/* Utility classes for consistent spacing */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+/* Container class for a responsive layout */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Navigation bar styling */
+.navbar {
+  background-color: #007bff;
+  padding: 10px 15px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover, 
+.navbar-nav .nav-item .nav-link:focus {
+  color: #d4d4d4;
+}
+
+/* Styling for forms */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-text {
+  color: #6c757d;
+}
+
+/* Card component styling */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #0056b3;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Table styling for a consistent look */
+.table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+/* Breadcrumb styling for navigation */
+.breadcrumb {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: #6c757d;
+  padding: 0 5px;
+}
+
+/* Alerts for user notifications */
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.alert-primary {
+  background-color: #cce5ff;
+  color: #004085;
+  border: 1px solid #b8daff;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* Additional utility classes for text alignment */
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}

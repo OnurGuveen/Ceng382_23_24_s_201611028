@@ -1,0 +1,31 @@
+@page "{roomId:int}"
+@model HotelReservationSystem.Pages.BookRoomModel
+@{
+    ViewData["Title"] = "Book a Room";
+}
+
+<h2>Room Booking</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Booking.RoomId" class="control-label">Select Room</label>
+        <select asp-for="Booking.RoomId" class="form-control">
+            @foreach (var room in Model.AvailableRooms)
+            {
+                <option value="@room.Id">@room.Name (@room.Capacity people, View: @room.View)</option>
+            }
+        </select>
+        <span asp-validation-for="Booking.RoomId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Booking.StartDate" class="control-label">Start Date</label>
+        <input asp-for="Booking.StartDate" class="form-control" type="date" />
+        <span asp-validation-for="Booking.StartDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Booking.EndDate" class="control-label">End Date</label>
+        <input asp-for="Booking.EndDate" class="form-control" type="date" />
+        <span asp-validation-for="Booking.EndDate" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Book Now</button>
+</form>
