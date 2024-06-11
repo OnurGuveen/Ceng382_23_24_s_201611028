@@ -13,3 +13,18 @@ C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\obj\Debug\net8.0
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.pdb
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.genruntimeconfig.cache
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\ref\Ceng382_23_24_s_201611028.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\bin\Debug\net8.0\Ceng382_23_24_s_201611028.exe
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\bin\Debug\net8.0\Ceng382_23_24_s_201611028.deps.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\bin\Debug\net8.0\Ceng382_23_24_s_201611028.runtimeconfig.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\bin\Debug\net8.0\Ceng382_23_24_s_201611028.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\bin\Debug\net8.0\Ceng382_23_24_s_201611028.pdb
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.AssemblyInfo.cs
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.sourcelink.json
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\refint\Ceng382_23_24_s_201611028.dll
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.pdb
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\Ceng382_23_24_s_201611028.genruntimeconfig.cache
+C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\obj\Debug\net8.0\ref\Ceng382_23_24_s_201611028.dll
