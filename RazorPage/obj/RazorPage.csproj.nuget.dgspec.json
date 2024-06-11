@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {}
+    "c:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {
+    "c:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
+        "projectUniqueName": "c:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
         "projectName": "RazorPage",
-        "projectPath": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
-        "packagesPath": "C:\\Users\\Yunus Güven\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus Güven\\Desktop\\ceng382\\Ceng382_23_24_s_201611028\\RazorPage\\obj\\",
+        "projectPath": "c:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_201611028\\RazorPage\\RazorPage.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_201611028\\RazorPage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yunus Güven\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

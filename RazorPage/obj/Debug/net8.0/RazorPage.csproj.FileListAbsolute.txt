@@ -59,3 +59,34 @@ C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\RazorPage\obj\De
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.pdb
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.genruntimeconfig.cache
 C:\Users\Yunus Güven\Desktop\ceng382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\ref\RazorPage.dll
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\appsettings.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.staticwebassets.runtime.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.exe
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.AssemblyInfoInputs.cache
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.AssemblyInfo.cs
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.csproj.CoreCompileInputs.cache
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.RazorAssemblyInfo.cache
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.RazorAssemblyInfo.cs
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.sourcelink.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets\msbuild.RazorPage.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets\msbuild.build.RazorPage.props
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RazorPage.props
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RazorPage.props
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\scopedcss\bundle\RazorPage.styles.css
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\scopedcss\projectbundle\RazorPage.bundle.scp.css
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.dll
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\refint\RazorPage.dll
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.pdb
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.deps.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.runtimeconfig.json
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.dll
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\bin\Debug\net8.0\RazorPage.pdb
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\RazorPage.genruntimeconfig.cache
+c:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_201611028\RazorPage\obj\Debug\net8.0\ref\RazorPage.dll
